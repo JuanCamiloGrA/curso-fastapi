@@ -1,0 +1,21 @@
+[project]
+name = "curso-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.5",
+    "sqlmodel>=0.0.22",
+]
+
+
+[tool.ruff.lint]
+preview = true
+select = ["F", "I", "N", "FAST"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "requests>=2.32.3",
+]
